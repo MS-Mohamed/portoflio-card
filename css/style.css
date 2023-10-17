@@ -1,0 +1,107 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../imgs/bg-pattern-bottom.svg");
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    height: 450px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card > .bg-img{
+    height: 33%;
+    width: 100%;
+    background-image: url("../imgs/bg-pattern-card.svg");
+}
+
+.card > .data{
+    border-bottom: 1px solid hsl(227, 10%, 46%);
+    text-align: center;
+    height: 44%;
+}
+
+.card > .data > img{
+    width: 120px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.card > .data > h2{
+    font-size: 30px;
+    font-family: cursive;
+    position: relative;
+    top: -45px;
+    color: hsl(229, 23%, 23%);
+}
+
+.card > .data > p{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: hsl(229, 23%, 23%);
+    letter-spacing: 4px;
+    position: relative;
+    top: -35px;
+}
+
+.card > .media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card > .media > .flp{
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+.card > .media > .flp > h3{
+    color: hsl(229, 23%, 23%);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card > .media > .flp > p{
+    font-size: 15px;
+    color: hsl(227, 10%, 46%);
+}
+
+@media (max-width:700px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media (max-width:280px){
+    .card{
+        width: 90%;
+        height: 360px;
+    }
+
+    .card > .data > h2{
+        font-size: 20px;
+        top: -50px;
+    }
+
+    .card > .data > p{
+        top: -45px;
+    }
+}
